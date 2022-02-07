@@ -9,37 +9,38 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body class=".container">
+<body>
     <!--Шапка сайта-->
     <header class="header-box" >
-        
-    <nav class="nav-box">
-        <div class="navbar">
+        <div class="container navbar">        
+            <nav class="nav-list">        
                 <a href="" class="logo">Web<span class="part-logo">Studio</span></a>
-
-            <ul class="nav-links">
-                <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
-                <li class="nav-item"><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
-                <li class="nav-item"><a href="tel:+380961111111" class="link-phone">+38 096 111 11 11</a></li>
-            </ul>
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+                    </ul>  
+            </nav>
+                    <ul class="nav-address">
+                        <li class="nav-item"><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
+                        <li class="nav-item"><a href="tel:+380961111111" class="link-phone">+38 096 111 11 11</a></li>
+                    </ul>
         </div>
-    </nav>
-        
     </header>
 
     <!--Герой-->
     <main>
             <section class="hero-box">
+                <div class="container hero">
                 <h1 class="hero-name">Эффективные решения<br>
                         для вашего бизнеса</h1>
                 <button type="button" class="button">Заказать услугу</button> 
-                
+                </div>
             </section>
 
         <!--Особенности-->
-        <section class="descr-list">
+        <section class="section">
+            <div class="container">
                 <h2 class="text-none">Особенности</h2>
                 <ul class="tittle-list">
                     <li class="tittle-item">
@@ -58,11 +59,13 @@
                         <h3 class="title-work">Современные технологии</h3>
                         <p class="descr-work">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
-                </ul>  
+                </ul>
+            </div>  
         </section>
 
         <!--Чем мы занимаемся-->
-        <section class="visual-work">
+        <section class="section visual-work">
+            <div class="container">
             <h2 class="title-icon">Чем мы занимаемся</h2>
             <ul class="title-images">
                 <li class="images-item">
@@ -75,31 +78,40 @@
                     <img src="./images/icon-c.jpg" width="370" alt="рисует дизайн"/> 
                 </li>
             </ul>
+        </div>
         </section>
 
-        <section class="community-list">
-            <div class="community-section">
+        <section class="section community-list">
+            <div class="container">
                 <h2 class="community-header">Наша команда</h2>
                 <ul class="card-list">
                     <li class="card"> 
                     <img src="./images/icon-e.jpg" width="270" alt="продукт дизайнер">
+                    <div class="name-box">
                         <h3 class="name">Игорь Демьяненко</h3> 
                         <p class="position">Product Designer</p>
+                    </div>
                     </li> 
                     <li class="card">
                         <img src="./images/icon-f.jpg" width="270" alt="фронтенд разработчик">
+                    <div class="name-box">
                         <h3 class="name">Ольга Репина</h3> 
                         <p class="position">Frontend Developer</p>
+                    </div>
                     </li> 
                     <li class="card">
-                    <img src="./images/icon-g.jpg" width="270" alt="маркетолог"> 
+                    <img src="./images/icon-g.jpg" width="270" alt="маркетолог">
+                    <div class="name-box"> 
                         <h3 class="name">Николай Тарасов</h3> 
                         <p class="position">Marketing</p>
+                    </div>
                     </li> 
                     <li class="card">
-                        <img src="./images/icon-h.jpg" width="270" alt="дизайнер">  
+                        <img src="./images/icon-h.jpg" width="270" alt="дизайнер">
+                    <div class="name-box"> 
                         <h3 class="name">Михаил Ермаков</h3> 
-                        <p class="position">UI Designer</p> 
+                        <p class="position">UI Designer</p>
+                    </div>  
                     </li>
                 </ul>
             </div>      
@@ -107,6 +119,7 @@
     </main>
 
     <footer class="footer">
+        <div class="container">
         <a href="" class="logo">Web<span class="part-logo-footer">Studio</span></a>
     <address>
         <ul class="address-list">
@@ -115,6 +128,7 @@
             <li class="address-item"><a href="tel:+380961111111" class="link-phone-foot">+38 096 111 11 11</a></li>
         </ul>
     </address>
+        </div>
     </footer>    
 </body>
 </html>
