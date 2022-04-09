@@ -36,15 +36,13 @@ a {
   text-decoration: none;
 }
 
-/*======== Header styles starts here ========*/
-
-.header-box {
-  border-bottom: 1px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.hero{
+  
 }
 
 .container {
@@ -55,10 +53,17 @@ a {
   padding-right: 15px;
 }
 
+/*======== Header styles starts here ========*/
+
+.header-box {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-list {
@@ -67,6 +72,7 @@ a {
 }
 
 .nav-links {
+  padding: 30px 0px 32px 0px;
   display: flex;
   margin-left: 93px;
 }
@@ -76,15 +82,18 @@ a {
 }
 
 .nav-address {
+  padding: 32px 0px 32px 0px;
   display: flex;
 }
 
 .hero-box {
-  margin-top: 10px;
+  padding: 200px 0px;
+  
+
 }
 
 .hero {
-  padding-top: 200px;
+  
 }
 
 .visual-work {
@@ -95,8 +104,13 @@ a {
   display: flex;
 }
 
+.tittle-item{
+  width: 270px;
+  height: 101px;
+}
+
 .tittle-item:not(last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .descr-work {
@@ -108,7 +122,7 @@ a {
   margin-top: 50px;
 }
 
-.images-item:not(last-child) {
+.images-item :not(last-child) {
   margin-right: 30px;
 }
 
@@ -166,6 +180,10 @@ a {
   margin-bottom: 50px;
 }
 
+.button-item {
+  
+}
+
 .button-item:not(last-child) {
   margin-right: 8px;
 }
@@ -178,16 +196,34 @@ a {
 
 .photo-image {
   background: #ffffff;
+}
+
+.photo-image {
   margin-right: 30px;
   margin-top: 30px;
 }
 
+.photo-image:nth-child(-n+3){
+  margin-top: 0px;
+}
+
+.photo-image:nth-child(3n+3){
+  margin-right: 0px;
+}
+
+
 .name-card {
-  padding: 20, 24px;
-  border-radius: 0 1 1 1px #212121;
+  padding: 20px 24px;
+  background: #ffffff;
+  border-top: 0px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #eeeeee;
 }
 
 .logo {
+  padding: 24px 0px 25px 0px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -355,11 +391,12 @@ a {
   border: 0px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.62;
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 6px 22px;
 
   color: var(--text-primary);
 }
